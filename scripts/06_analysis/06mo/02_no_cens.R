@@ -68,7 +68,7 @@ M <- list(c("mediator_max_daily_dose_mme",
             "mediator_has_physical_therapy",
             "mediator_has_multimodal_pain_treatment_restrict"))
 
-Y <- "oud_24mo"
+Y <- "oud_24mo_icd"
 mo <- as.numeric(unlist(stringr::str_extract_all(Y, "\\d+")))
 cens <- glue::glue("uncens_{mo}mo")
 
