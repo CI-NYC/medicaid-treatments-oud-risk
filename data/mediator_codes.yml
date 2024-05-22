@@ -1,0 +1,365 @@
+Opioid pain:
+    ATC:
+        N02A: Opioid analgesics
+        N01AH: Opioid anesthetics
+        # R05DA: Opium alkaloids and derivatives
+        N07BC: Drugs used in opioid dependence # Certain exclusions apply
+
+Non-opioid pain:
+    # Filled any non-opioid prescription medications for pain management-e.g medication antidepressants, muscle relaxants, anticonvulsants, without an overlapping opioid prescription. Controlling for nonpain indications for antidepressants and anticonvulsants
+    ATC:
+        A03D: Antispasmodics in combination with analgesics
+        A03EA: Antispasmodics, psycholeptics and analgesics in combination
+        M01: Anti-inflammatory and antirheumatic products
+        M02A: Topical products for joint and muscular pain
+        M03: Muscle relaxants
+        N02B: Other analgesics and antipyretics
+        N06A: Anti-depressants
+        
+Benzodiazepines:
+    ATC:
+        N03AE: Benzodiazepine derivatives, antiepileptics
+        N05BA: Benzodiazepine derivatives, anxiolytics
+        N05CD: Benzodiazepine derivatives, hypontics and sedatives
+
+Stimulants:
+    ATC: 
+        N06BA: Centrally acting sympathomimetics
+        
+Gabapentin:
+    ATC:
+        N02BF: Gabapentinoids
+        
+Counseling:
+    # Claims for mental health counseling (Doesn't include counseling for substance abuse)
+    # Operationalize as a single binary covariate for having a counseling claim during the mediation window
+    CPT:
+        "90785": Under Interactive Complexity Psychiatry Services and Procedures
+        "90832": Under Psychotherapy Services and Procedures
+        "90833": Under Psychotherapy Services and Procedures
+        "90834": Under Psychotherapy Services and Procedures
+        "90836": Under Psychotherapy Services and Procedures
+        "90837": Under Psychotherapy Services and Procedures
+        "90838": Under Psychotherapy Services and Procedures
+        "90839": Under Psychotherapy for Crisis Services and Procedures
+        "90840": Under Psychotherapy for Crisis Services and Procedures
+        "90845": Under Other Psychotherapy Procedures
+        "90846": Under Other Psychotherapy Procedures
+        "90847": Under Other Psychotherapy Procedures
+        "90849": Under Other Psychotherapy Procedures
+        "90853": Under Other Psychotherapy Procedures
+        "90863": The provider prescribes and reviews medications for pharmacological management after psychotherapy services at the same encounter.
+        "90865": In this procedure, the provider administers a narcotic drug to induce a hypnotic state that helps in psychiatric diagnosis and treatment.
+        "90867": In this procedure, the provider performs transcranial magnetic stimulation, or TMS, a procedure that uses magnetic fields to stimulate nerve cells in the brain to improve symptoms of depression. Use this code for initial treatment that includes cortical mapping, motor threshold determination, delivery, and management.
+        "90868": In this procedure, the provider performs transcranial magnetic stimulation, or TMS, a procedure that uses magnetic fields to stimulate nerve cells in the brain to improve symptoms of depression. Use this code for subsequent delivery and management, per session.
+        "90869": The provider performs a subsequent redetermination of the minimum intensity of electrical pulses necessary to elicit the desired response in brain activity for a patient undergoing therapeutic transcranial magnetic stimulation, or TMS, a therapy that uses a magnet to generate electric pulses that stimulate nerve cells in the brain. He delivers and manages the therapy based on his findings. He performs the procedure to treat depression in a patient who does not respond to medications.
+        "90870": The provider applies an electric current to the patient's brain for the purpose of producing a seizure or series of seizures to alleviate symptoms of various mental disorders.
+        "90875": In this service, the provider performs 30 minutes of psychophysiological therapy using biofeedback training along with psychotherapy to alter the behavior of the patient.
+        "90876": In this service, the provider performs 45 minutes of psychophysiological therapy using biofeedback training along with psychotherapy to alter the behavior of the patient.
+        "90880": Hypnotherapy is a type of psychotherapy performed by the provider who creates a state of altered awareness in a patient that gives access to the subconscious mind.
+        "90882": In this service, the provider works with outside agencies, employers, or other healthcare providers regarding the patient’s physical environment to help manage a psychiatric patient’s medical care.
+    HCPC:
+        G0409: Social work and psychological services, directly relating to and/or furthering the patient's rehabilitation goals, each 15 minutes, face-to-face; individual
+        G0410: Group psychotherapy other than of a multiple-family group, in a partial hospitalization setting, approximately 45 to 50 minutes
+        G0411: Interactive group psychotherapy, in a partial hospitalization setting, approximately 45 to 50 minutes
+    ICD10:
+        GZ5: Individual Psychotherapy
+        GZ6: Counseling
+        GZ7: Family Psychotherapy
+
+Physical therapy:
+    # Claims for physical or restorative therapy
+    # Operationalize as a single binary covariate for having PT (or not) during mediation window
+    CPT:
+        # Physical Medicine and Rehabilitation Therapeutic Procedures
+        "97110": Therapeutic exercise is a form of physical therapy that utilizes specially designed exercises and activities to help patients gain better mobility and fitness levels.
+        "97112": Neuromuscular reeducation is a therapeutic treatment (exercise) performed by a physician in an attempt to reduce impairments and restore function through the application of clinical skills and/or services.
+        "97113": The provider instructs and supervises the patient on aquatic therapeutic exercises for one or more areas of the body for a period of 15 minutes.
+        "97116": The provider instructs the patient in the proper ways of practicing various exercises, including climbing stairs, focusing on one or more areas, that assist them in walking comfortably and without strain for a period of 15 minutes.
+        "97129": The provider works directly one–on–one with the patient to help him improve cognitive functions such as thinking, remembering, reasoning, and problem solving and the ability to plan, organize, and carry out tasks in a practical, sensible, and timely manner.
+        "97130": The provider works directly one–on–one with the patient to help him improve cognitive functions such as thinking, remembering, reasoning, and problem solving and the ability to plan, organize, and carry out tasks in a practical, sensible, and timely manner.
+        "97139": Use 97139 to report therapeutic procedures that do not have a specific code.
+        "97140": Manual therapy is a form of physical therapy which uses the controlled movement and pressure of hands to treat various disorders of soft tissues and joints, eg, chronic back pain.
+        "97150": In this procedure, the provider supervises and directs therapeutic procedures like exercise therapy for a group of patients.
+        "97151": The provider, a physician or other qualified healthcare professional, identifies the adaptive or maladaptive behavior of the patient by administering several different types of tests in person; he scores the test, interprets the results, develops a plan of care, prepares a report, and discusses his findings and recommendations with the parent, guardian, and/or caregiver.
+        "97152": A technician, supervised by a physician or other qualified healthcare professional, provides supporting assessment of a patient’s destructive behavior and behavioral problems by interacting directly with the patient.
+        "97153": A technician, supervised by a physician or other qualified healthcare professional, administers adaptive behavior treatments that target conditions such as developmental disabilities associated with adaptive or maladaptive behaviors, such as impaired social skills and communication, according to an established protocol.
+        "97154": A technician, supervised by a physician or other qualified healthcare professional, administers adaptive behavior treatments that target conditions such as developmental disabilities associated with adaptive or maladaptive behaviors, such as impaired social skills and communication, according to an established protocol.
+        "97155": The provider, a physician or other qualified healthcare professional, administers adaptive behavior treatment face–to–face with one patient and makes modifications in the protocol targets and treatment technique that he will teach simultaneously to a technician.
+        "97156": The provider discusses a patient’s adaptive behavior treatment face–to–face with the guardian(s) or caregiver(s), with or without the patient present.
+        "97157": The provider discusses multiple patients’ adaptive behavior treatment face–to–face with a group of guardians or caregivers, without the respective patients being present.
+        "97158": The provider administers adaptive behavior treatment to multiple patients in a social skills group.
+        "97161": The provider, typically a physical therapist, conducts a physical therapy evaluation that includes history to rule out any adverse factors that will affect care; observes whether the patient's current status is stable and uncomplicated; and assess one to two elements relating to body structure and function, and limitations, such as joint flexibility, muscle strength, gait, mobility, and neuromuscular function.
+        "97162": The provider, typically a physical therapist, conducts a physical therapy evaluation that includes history to rule out any adverse factors that will affect care; observes whether the patient's current status is evolving or changing in characteristics; and assess three or more elements relating to body structure and function, and limitations, such as joint flexibility, muscle strength, gait, mobility, and neuromuscular function.
+        "97163": The provider, typically a physical therapist, conducts a physical therapy evaluation that includes history of a patient with three or more personal factors that may affect care, assess a clinical status with unstable and unpredictable characteristics, and examines four or more elements relating to body structure and function, and limitations, such as joint flexibility, muscle strength, gait, mobility, and neuromuscular function.
+        "97164": The provider, typically a physical therapist, conducts a physical therapy re–evaluation that includes history review and standardized tests and measures to assess body structure and function; she revises the plan of care using standardized instrument and measurable functional outcome assessment tool, typically involving 20 minutes of face–to–face time with the patient or family or both.
+        "97165": The occupational therapist (OT) performs an evaluation requiring clinical decision–making of low complexity, which includes analysis of occupational profile, problem–focused assessment data, and consideration of a limited number of treatment options, on a patient who presents with no health issues that affect occupational performance.
+        "97166": The occupational therapist (OT) performs an evaluation requiring clinical decision–making of moderate analytic complexity, which includes analysis of occupational profile, problem–focused assessment data, and consideration of several treatment options, on a patient who presents with health issues that affect occupational performance.
+        "97167": The occupational therapist (OT) performs an evaluation requiring clinical decision–making of high analytic complexity, which includes analysis of occupational profile, problem–focused assessment data, and consideration of multiple treatment options, on a patient who presents with health issues that affect occupational performance.
+        "97168": The occupational therapist (OT) performs a re–evaluation focusing on changes in the patient's functional, environment, or medical status that results in a revised plan of care; re–evaluation includes updating the occupational profile to reflect changes in the patient's condition or environment that affect therapy or goals.
+        "97169": The provider carries out an assessment requiring medical decision–making of low complexity.
+        "97170": The provider carries out an assessment requiring medical decision–making of moderate complexity on a patient with one to two health–related issues that affect physical activity.
+        "97171": The provider carries out an assessment requiring medical decision–making of high complexity on a patient with three or more health–related issues and an unstable or unpredictable clinical presentation that affect physical activity.
+        "97172": The provider carries out a re–evaluation of an established plans of care for athletic training on a patient recovering from a sports injury who has had a documented change in functional status.
+        "97530": The provider uses various activities during direct contact with the patient to improve the patient’s functional performance.
+        "97533": In this procedure, the provider uses sensory integrative techniques in patients with established dysfunction of sensory processing, for example, children with autism, and brain injuries.
+        "97535": A healthcare provider is required to give proper instruction to a person especially in cases of recovery from acute disease.
+        "97537": In this procedure, the provider works one on one with a patient to provide community work reintegration training.
+        "97542": In this procedure, the provider assesses the patient’s need for a wheelchair and teaches him wheelchair maneuvering skills.
+        "97545": In this procedure, the provider has the patient go through the first two hours of a work hardening/conditioning program.
+        "97546": In this add–on procedure, the provider has the patient go through a work hardening/conditioning program for an additional hour.
+        # Added the following codes per Floriana’s codebook (SF)
+        "97001": Physical therapy evaluation performed by a licensed physical therapist;  involves a comprehensive assessment of a patient's condition, including history-taking, examination, and development of a treatment plan.
+        "97002": Physical therapy re-evaluation to assess a patient's progress and make adjustments to the treatment plan.
+
+        # Supervised Physical Medicine and Rehabilitation Modalities
+        "97010": The provider, such as physical therapist, applies a hot or cold pack to a specific body site to treat an injury or disease.
+        "97012": Mechanical traction is a highly successful alternative to surgery.
+        "97014": The provider, who is typically a physical therapist, applies an electrical current to nerves or to a muscle or group of muscles, causing them to contract.
+        "97016": In this procedure, the provider applies the vasopneumatic device to an extremity for the purpose of reducing edema, or swelling.
+        "97018": In this procedure, the provider applies the paraffin wax on the joints or dips the limb in the paraffin wax solution.
+        "97022": The whirlpool method of treatment is a form of hydrotherapy that uses circulating water and air with varied temperature and pressure settings for the treatment of certain disorders.
+        "97024": The provider, who is typically a physical therapist, applies deep heat to specific body areas to reduce pain and increase blood flow to damaged tissues, muscles, and joints.
+        "97026": The provider, who can be a physician, physical therapist, or massage therapist, among others, applies infrared light therapy to specific body areas to reduce pain, increase joint mobility, promote circulation, and aid in healing.
+        "97028": In this procedure, the provider applies ultraviolet rays on one or more body parts to treat certain skin ailments.
+        # Added the following codes per Floriana’s codebook (SF)
+        "97750": Physical performance test  to assess a patient's functional abilities, such as strength, endurance, flexibility, and balance.
+        "97755": Assistive technology assessment; evaluating a patient's need for assistive technology devices or equipment that can enhance their functional abilities and independence.
+        "97760": Orthotic(s)/prosthetic(s) management and training; ncludes assessing the patient's needs, fitting the devices, and providing training on their proper use and care.
+        "97761": Prosthetic training to a patient for the use of a prosthetic device
+        "97763": Orthotic(s) training to a patient for the use of an orthotic device.
+        
+        # Constant Attendance Physical Medicine and Rehabilitation Modalities
+        "97032": Electrical stimulation therapy uses electricity to stimulate the muscles for the treatment of pain and other disorders associated with muscles.
+        "97033": In this procedure, the provider administers iontophoresis, which uses electric current to deliver medicine through skin.
+        "97034": In this procedure, the provider uses a contrast bath for treating muscle soreness, swelling, and inflammation.
+        "97035": Physical therapists use different treatment modalities that can help strengthen, relax, and heal muscles from their strained conditions.
+        "97036": In this procedure, the provider uses a Hubbard tank to deliver hydrotherapy, a type of therapy that uses water for treatment.
+        "97039": Use 97039 to report procedures in which the provider uses a physical therapy modality that does not have a specific code.
+    HCPC:
+        G0151: Services performed by a qualified physical therapist in the home health or hospice setting, each 15 minutes
+        G0152: Services performed by a qualified occupational therapist in the home health or hospice setting, each 15 minutes
+        G0157: Services performed by a qualified physical therapist assistant in the home health or hospice setting, each 15 minutes
+        G0158: Services performed by a qualified occupational therapist assistant in the home health or hospice setting, each 15 minutes
+        G0159: Services performed by a qualified physical therapist, in the home health setting, in the establishment or delivery of a safe and effective physical therapy maintenance program, each 15 minutes
+        G0160: Services performed by a qualified occupational therapist, in the home health setting, in the establishment or delivery of a safe and effective occupational therapy maintenance program, each 15 minutes
+        # Added the following code per Floriana’s codebook (SF)
+        G0283: Electrical stimulation therapy (that does not involve wound care), uses electrical currents to stimulate muscles or nerves for pain relief, muscle re-education, or other therapeutic purposes
+
+    Modifiers:
+        CQ: Outpatient physical therapy services furnished in whole or in part by a physical therapist assistant
+        GP: Services delivered under an outpatient physical therapy plan of care
+        CO: Outpatient occupational therapy services furnished in whole or in part by an occupational therapy assistant
+        GO: Services delivered under an outpatient occupational therapy plan of care
+
+# New addition (SF)
+Massage therapy: 
+    CPT:
+        # https://www.gethealthie.com/blog/massage-therapy-cpt-codes
+        "97124": Massage therapy techniques of applying light or firm pressure, with different movement styles, using palms, fingers, and thumbs, over body muscles and tissues in order to restore better blood circulation, relax muscles, and stimulate soft tissues.
+        "97140": Manual therapy techniques to increase active pain-free range of motion; may be employed by chiropractors as an alternative means of reporting spinal manipulation.
+        "97010": Application of hot or cold packs for  relaxation of muscle spasticity, induction of local analgesia and general sedation, promotion of vasodilation, and increase in lymph flow to the area.
+
+# New addition (SF)
+Chiropractic: 
+    CPT:
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleId=56273
+        # https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9237579/#sec0015
+        "98940": Spinal chiropractic manipulative treatment in 1-2 regions
+        "98941": Spinal chiropractic manipulative treatment in 3-4regions
+        "98942": Spinal chiropractic manipulative treatment in 5 regions
+        # "97140": Manual therapy techniques to increase active pain-free range of motion; may be employed by chiropractors as an alternative means of reporting spinal manipulation - possibly more applicable to the "massage therapy" category (SF)
+      
+Ablative techniques:
+    CPT:
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleid=58350
+        "64633": In this procedure, the provider destroys the facet joint nerve of a cervical or thoracic spinal segment using neurolytic agents like heat, electric current, or a chemical compound.
+        "64634": In this add on procedure, the provider destroys the facet joint nerve of a cervical or thoracic spinal segment using neurolytic agents like heat, electric current, or a chemical compound.
+        "64635": Under fluoroscopic or CT guidance, the provider applies an agent to a lower back joint to destroy nerve tissue.
+        "64636": In this add on procedure, the provider destroys the facet joint nerve of a lumbar or sacral spinal segment using neurolytic agents like heat, electric current, or a chemical compound.
+    HCPC:
+
+Acupuncture:
+    # Operationalize as single binary covariate for having acupuncture claim during mediation window
+    CPT:
+        "97810": The provider uses solid, metallic, fine, single–use needles to pierce the skin and stimulate anatomical points on or in the skin by manipulating the needles by hand during an initial 15 minute treatment.
+        "97811": The provider uses thin, solid, metallic, fine, single–use needles to pierce the skin and stimulate anatomical points on or in the skin by manipulating the needles by hand.
+        "97813": The provider uses solid, metallic, fine, single–use needles to pierce the skin and stimulate anatomical points on or in the skin by manipulating the needles by electrical stimulation for an initial 15–minute treatment.
+        "97814": The provider uses thin, solid, metallic, fine, single–use needles to pierce the skin and stimulate anatomical points on or in the skin by manipulating the needles by electrical stimulation.
+    HCPC:
+        S8930: Electrical stimulation of auricular acupuncture points; each 15 minutes of personal one-on-one contact with the patient
+
+Botulinum toxin injections:
+    CPT:
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleid=52848&ver=24&=
+        # "46505": Chemodenervation of internal anal sphincter
+        # "64611": Chemodenervation of parotid and submandibular salivary glands, bilateral
+        "64612": Chemodenervation of muscle(s); muscle(s) innervated by facial nerve, unilateral (eg, for blepharospasm, hemifacial spasm)
+        "64615": Chemodenervation of muscle(s); muscle(s) innervated by facial, trigeminal, cervical spinal and accessory nerves, bilateral (eg, for chronic migraine)
+        "64616": Chemodenervation of muscle(s); neck muscle(s), excluding muscles of the larynx, unilateral (eg, for cervical dystonia, spasmodic torticollis)
+        "64617": Chemodenervation of muscle(s); larynx, unilateral, percutaneous (eg, for spasmodic dysphonia), includes guidance by needle electromyography, when performed
+        "64642": Chemodenervation of one extremity; 1-4 muscle(s)
+        "64643": Chemodenervation of one extremity; each additional extremity, 1-4 muscle(s) (list separately in addition to code for primary procedure)
+        "64644": Chemodenervation of one extremity; 5 or more muscles
+        "64645": Chemodenervation of one extremity; each additional extremity, 5 or more muscles (list separately in addition to code for primary procedure)
+        "64646": Chemodenervation of trunk muscle(s); 1-5 muscle(s)
+        "64647": Chemodenervation of trunk muscle(s); 6 or more muscles
+        "64650": Chemodenervation of eccrine glands; both axillae
+        "64653": Chemodenervation of eccrine glands; other area(s) (eg, scalp, face, neck), per day
+        "67345": Chemodenervation of extraocular muscle
+    HCPC:
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleid=52848&ver=24&=
+        J0585: Injection, onabotulinumtoxina, 1 unit
+        J0586: Injection, abobotulinumtoxina, 5 units
+        J0587: Injection, rimabotulinumtoxinb, 100 units
+        J0588: Injection, incobotulinumtoxin a, 1 unit
+
+Electrical nerve stimulation:
+    CPT:
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleId=55531
+        "61885": The provider makes an incision and implants or replaces a direct or inductive cranial pulse generator or receiver in a subcutaneous pocket for connection to one electrode array.
+        "64553": A neurostimulator includes electrodes which are inserted under the skin and induced by a small pulse generator to stimulate the nerve tissue.
+        "64555": A neurostimulator includes electrodes which are inserted under the skin and induced by a generator to stimulate the nerve tissue.
+        "64561": The provider, under imaging guidance, implants electrodes around nerves in the sacral region to reduce the pain along the path of the nerve.
+        "64569": The provider replaces or revises a vagus nerve electrode array and its connections to an existing pulse generator.
+        "64570": The provider removes a vagus nerve electrode array and existing pulse generator.
+        "64575": The provider uses an open approach to implant a peripheral nerve neurostimulator electrode array.
+        "64581": The provider uses an open approach to implant a sacral nerve neurostimulator electrode array.
+        "64585": The provider revises or removes a neurostimulator electrode array on a peripheral nerve, the portion of the nervous system lying outside the brain and spinal cord.
+        "64590": The provider makes an incision and implants or replaces a nerve stimulator unit for stimulation of a selected peripheral motor or sensory nerve, the portion of the nervous system lying outside the brain and spinal cord, or to stimulate the stomach.
+        "64595": The provider revises or removes a nerve stimulator on a peripheral nerve, the portion of the nervous system lying outside the brain and spinal cord, or on a gastric nerve in the stomach.
+        
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleId=57709&ver=3
+        "63650": In this procedure, the provider places electrodes in the epidural space to relieve pain and reduce or eliminate spasms.
+        "63655": In this procedure, the provider removes a portion of the vertebra called the lamina and places a permanent plate/paddle electrode in the epidural space, or area between the dura membrane and the wall of the vertebra for spinal cord stimulation.
+        "63661": The provider removes one or more spinal neurostimulator electrode percutaneous arrays.
+        "63662": In this procedure, the provider removes the spinal neurostimulator electrode plates or paddles previously placed through laminotomy or laminectomy, which removed either the entire lamina or part of the lamina.
+        "63663": The provider revises and or replaces a previous placed permanent percutaneous electrode array for spinal cord stimulation.
+        "63664": In this procedure, the provider revises the spinal neurostimulator electrode plates or paddles that were previously placed through laminotomy or laminectomy, which removed either the entire lamina or part of the lamina.
+        "63685": The provider inserts or replaces a spinal neurostimulator pulse generator or receiver into a subcutaneous pocket he surgically creates.
+        "63688": The provider revises or removes a previously implanted spinal neurostimulator pulse generator or receiver.
+
+# New addition (SF)
+# https://www.aapc.com/codes/hcpcs-codes-range/93/10
+    HCPC:
+        "E0720": Transcutaneous electrical nerve stimulation (TENS) device; used for pain relief by sending low-voltage electrical currents through electrodes placed on the skin.
+        "E0730": Electrical nerve stimulator, electronic pulse, for pain relief, any type
+        "E0731": Form-fitting conductive garment for electrical nerve stimulation as part of a TENS device; an accessory used with TENS devices for targeted pain relief.
+        "E0755": Electrical stimulation of the sacral nerve; used to manage certain types of chronic pain.
+        "A4556": Implantable neurostimulator pulse generator, dual array, non-rechargeable
+        "A4557": Implantable neurostimulator pulse generator, single array, rechargeable
+        "A4558": Implantable neurostimulator pulse generator, single array, non-rechargeable
+        "L8685": Implantable neurostimulator pulse generator, single array, rechargeable
+        "L8686": Implantable neurostimulator pulse generator, single array, non-rechargeable
+        "L8687": Implantable neurostimulator pulse generator, dual array, rechargeable
+     
+Intrathecal drug therapies:
+    CPT:
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleid=55239
+        "62325": Injection(s), including indwelling catheter placement, continuous infusion or intermittent bolus, of diagnostic or therapeutic substance(s) (eg, anesthetic, antispasmodic, opioid, steroid, other solution), not including neurolytic substances, interlaminar epidural or subarachnoid, cervical or thoracic; with imaging guidance (ie, fluoroscopy or ct)
+        "62327": Injection(s), including indwelling catheter placement, continuous infusion or intermittent bolus, of diagnostic or therapeutic substance(s) (eg, anesthetic, antispasmodic, opioid, steroid, other solution), not including neurolytic substances, interlaminar epidural or subarachnoid, lumbar or sacral (caudal); with imaging guidance (ie, fluoroscopy or ct)
+        "62350": Implantation, revision or repositioning of tunneled intrathecal or epidural catheter, for long-term medication administration via an external pump or implantable reservoir/infusion pump; without laminectomy
+        "62351": Implantation, revision or repositioning of tunneled intrathecal or epidural catheter, for long-term medication administration via an external pump or implantable reservoir/infusion pump; with laminectomy
+        "62355": Removal of previously implanted intrathecal or epidural catheter
+        "62360": Implantation or replacement of device for intrathecal or epidural drug infusion; subcutaneous reservoir
+        "62361": Implantation or replacement of device for intrathecal or epidural drug infusion; nonprogrammable pump
+        "62362": Implantation or replacement of device for intrathecal or epidural drug infusion; programmable pump, including preparation of pump, with or without programming
+        "62365": Removal of subcutaneous reservoir or pump, previously implanted for intrathecal or epidural infusion
+        "62367": Electronic analysis of programmable, implanted pump for intrathecal or epidural drug infusion (includes evaluation of reservoir status, alarm status, drug prescription status); without reprogramming or refill
+        "62368": Electronic analysis of programmable, implanted pump for intrathecal or epidural drug infusion (includes evaluation of reservoir status, alarm status, drug prescription status); with reprogramming
+        "62369": Electronic analysis of programmable, implanted pump for intrathecal or epidural drug infusion (includes evaluation of reservoir status, alarm status, drug prescription status); with reprogramming and refill
+        "62370": Electronic analysis of programmable, implanted pump for intrathecal or epidural drug infusion (includes evaluation of reservoir status, alarm status, drug prescription status); with reprogramming and refill (requiring skill of a physician or other qualified health care professional)
+        "95990": Refilling and maintenance of implantable pump or reservoir for drug delivery, spinal (intrathecal, epidural) or brain (intraventricular), includes electronic analysis of pump, when performed;
+        "95991": Refilling and maintenance of implantable pump or reservoir for drug delivery, spinal (intrathecal, epidural) or brain (intraventricular), includes electronic analysis of pump, when performed; requiring skill of a physician or other qualified health care professional
+    HCPC:
+    
+Epidural steroids:
+    CPT:
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleId=56681
+        "62321": The provider injects a diagnostic or a therapeutic substance, such as pain medication or a steroid, into the space around the spinal nerves of the cervical (neck) or thoracic (upper and middle back) region, under imaging guidance. 
+        "62323": The provider injects a diagnostic or a therapeutic substance, such as pain medication or a steroid, into the space around the spinal nerves of the lumbar (lower back) or sacral (caudal, or tailbone) region, under imaging guidance. 
+        "64479": This procedure is the injection of an anesthetic agent and/or steroid in the form of a transforaminal epidural injection into a single level (either cervical or thoracic).
+        "64480": This procedure is the injection of an anesthetic agent and/or steroid in the form of a transforaminal epidural injection in the cervical or thoracic region. 
+        "64483": This procedure is the injection of an anesthetic agent and/or steroid in the form of a transforaminal epidural injection into a single level (either lumbar or sacral).
+        "64484": This procedure is the injection of an anesthetic agent and/or steroid in the form of a transforaminal epidural injection in the lumbar or sacral region.
+        
+        # Added 62320 and 62322 per Floriana’s codebook – epidural steroid injections for pain management (like "62321" "62323" "64479" "64480" "64483" "64484") but are not covered by Medicaid (SF)
+        "62320": This procedure is the injection of an interlaminar epidural or subarachnoid, in the cervical or thoracic region (without imaging guidance).
+        "62322": This procedure is the injection of an interlaminar epidural or subarachnoid, in the lumbar or sacral region, (without imaging guidance).
+    HCPC:  
+
+Blocks: 
+    CPT:    
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleId=56034
+        "62281": The provider injects or infuses a neurolytic, a substance that is used to kill a specific nerve or group of nerves, in the epidural space of the cervical or thoracic spinal level.
+        "62324": The provider injects a diagnostic or a therapeutic substance, such as pain medication or a steroid, into the space around the spinal nerves of the cervical (neck) or thoracic (upper and middle back) region via continuous infusion or intermittent boluses (large doses). # Note: If 62325 is commented out should 62324 be as well? They seem like very similar codes (SF)
+        # "62325": The provider injects a diagnostic or a therapeutic substance, such as pain medication or a steroid, into the space around the spinal nerves of the cervical (neck) or thoracic (upper and middle back) region via continuous infusion or intermittent boluses (large doses).
+        "64405": The provider injects an anesthetic and/or steroid agent into the greater occipital nerve, a nerve arising from the second cranial nerve, also called the optic nerve.
+        "64408": The provider injects an anesthetic, steroid, or both into the tenth cranial nerve, also called the vagus nerve.
+        "64415": The provider injects one or more anesthetic agents and/or a steroid into the brachial plexus area, a group of nerves in the arm that originates in the neck.
+        "64417": The provider injects one or more anesthetic agents and/or a steroid into the area of the axillary nerve, a large nerve arising from the brachial plexus at the armpit.
+        "64418": The provider injects an anesthetic agent and/or steroid close to the suprascapular nerve, which is located above the flat triangular bone at the back of the shoulder known as the shoulder blade.
+        "64420": The provider injects an anesthetic agent and/or steroid in one of the ventral branches of the thoracic spinal nerves located under each rib, called an intercostal nerve.
+        "64421": The provider injects an anesthetic agent and/or steroid close to one of the ventral branches of the thoracic spinal nerves located under each rib, called the intercostal nerve.
+        "64425": The provider injects an anesthetic agent and/or steroid close to the nerves that branch from the first lumbar nerve, i.e., the ilioinguinal nerve or the iliohypogastric nerve.
+        "64430": The provider injects an anesthetic agent or steroid or both into the pudendal nerve, the main nerve of the perineum.
+        "64435": The provider injects an anesthetic agent, steroid, or both in the paracervical or uterine nerve in the area alongside the cervix in females.
+        "64445": The provider injects one or more anesthetic agents and/or a steroid into the area of the sciatic nerve, which supplies the skin and muscles of the leg.
+        "64446": The provider places a catheter and administers one or more anesthetic agents and/or a steroid by continuous infusion into the area of the sciatic nerve, which supplies the skin and muscles of the leg.
+        "64447": The provider injects one or more anesthetic agents and/or a steroid into the area of the femoral nerve, which innervates the leg and foot.
+        "64448": The provider places a catheter and administers one or more anesthetic agents and/or a steroid by continuous infusion into the area of the femoral nerve, which innervates the leg and foot.
+        "64449": The provider administers an anesthetic agent, steroid, or both via continuous infusion through a catheter as a nerve block of the lumbar plexus to keep the target region anesthetized as long as required.
+        "64450": The provider injects an anesthetic agent, steroid, or both close to a peripheral nerve or branch not represented by another code.
+        "64451": The provider injects an anesthetic and/or a steroid under imaging guidance into the nerves supplying the sacroiliac joint to diagnose and/or treat sacroiliac joint pain.
+        "64461": The provider injects local anesthesia at a single site in the spaces beside or around the vertebrae of the thoracic spine.
+        "64462": In this add on procedure, the provider injects local anesthesia at an additional site after the first in the spaces beside or around the vertebrae of the thoracic spine.
+        "64463": The provider places a catheter for the purpose of providing continuous infusion of a drug, such as an anesthetic, steroid, or opioid drug, into the space next to and around the vertebrae of the thoracic spine.
+        "64505": In this procedure, the provider performs a nerve block of the sphenopalatine ganglion, called Meckel’s ganglion or nasal ganglion, which is associated with the trigeminal nerve.
+        "64510": In this procedure, the provider performs a nerve block on the stellate ganglion, called the cervicothoracic ganglion, which is part of the sympathetic nervous system.
+        "64517": In this procedure, the provider performs a nerve block on the superior hypogastric plexus, which is part of the thoracolumbar sympathetic chain of the autonomic nervous system.
+        "64520": In this procedure, the provider performs a nerve block on the lumbar or thoracic paravertebral sympathetic nerves, which are part of the sympathetic division of the autonomic nervous system.
+        "64530": In this procedure, the provider performs a nerve block on the celiac plexus, called the solar plexus, which is part of the sympathetic nervous system.
+        "64620": The provider uses a chemical, heat, or radiofrequency technique to destroy the intercostal nerve.
+        "64640": Neurolysis is the destruction of nerves responsible for carrying pain information.
+
+        # New addition per Floriana’s codebook and the article below (SF)
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleid=58364&ver=17&keyword=joint%20block&keywordType=starts&areaId=all&docType=NCA,CAL,NCD,MEDCAC,TA,MCD,6,3,5,1,F,P&contractOption=all&sortBy=relevance&bc=1
+        "64490": Paravertebral facet joint injection of a diagnostic or therapeutic agent in the cervical\thoracic region, 1 level
+        "64491": Paravertebral facet joint injection of a diagnostic or therapeutic agent in the cervical\thoracic region, 2 levels
+        "64492": Paravertebral facet joint injection of a diagnostic or therapeutic agent in the cervical\thoracic region, 3 levels
+        "64493": Paravertebral facet joint injection of a diagnostic or therapeutic agent in the lumbar\sacral region, 1 level
+        "64494": Paravertebral facet joint injection of a diagnostic or therapeutic agent in the lumbar\sacral region, 2 levels
+        "64495": Paravertebral facet joint injection of a diagnostic or therapeutic agent in the lumbar\sacral region, 3 levels
+        # Added the following codes 64400 and 64455 per Floriana’s codebook (SF)
+        "64400": Injection of an anesthetic agent in the trigeminal nerve, any division or branch; may be used for treating certain facial pain conditions.
+        "64455": Paravertebral facet joint injection of an anesthetic agent and/or steroid in the lumbar\sacral region, single level; may reduce pain and inflammation associated with facet joint issues.
+    HCPC:
+    
+Minimally invasive spinal procedures:
+    # New addition (SF)
+    # https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/mm_0139_coveragepositioncriteria_invasive_treatment_for_back_pain.pdf
+    CPT: 
+        "62380": Endoscopic procedure to decompress the spinal cord and nerve roots in the lumbar region.
+        "62287": Decompression procedure utilizing needle-based technique to remove disc material, single or multiple levels in the lumbar region.
+        "22526": Application of heat to the intervertebral disc's annulus fibrosus to treat disc-related pain, single level.
+        "22527": Application of heat to the intervertebral disc's annulus fibrosus to treat disc-related pain, 1 or more additional levels.
+        "64628": Use of radiofrequency energy to ablate the basivertebral nerve in the lumbar or sacral region to manage chronic low back pain.
+        # Added the following (22510-22515) per Floriana’s codebook, but may not be classified “minimally invasive”, as they are associated with open surgical procedures for spinal fusion (SF)
+        # "22510": Percutaneous vertebroplasty (bone biopsy included when performed), 1 vertebral body, unilateral or bilateral injection, inclusive of all imaging guidance; cervicothoracic
+        # "22511": Percutaneous vertebroplasty lumbosacral
+        # "22512": Percutaneous vertebroplasty lumbosacral; each additional cervicothoracic or lumbosacral vertebral body (List separately in addition to code for primary procedure)
+        # "22513": Percutaneous vertebral augmentation (kyphoplasty)
+        # "22514": Percutaneous vertebral augmentation (kyphoplasty) lumbar
+        # "22515": Percutaneous vertebral augmentation (kyphoplasty) (add on code cannot be used alone)
+    HCPC:
+        "C9757": Repair of annular defect with implantation of bone anchored annular closure device in the lumbar region.
+        "C1713": Anchor/screw for opposing bone-to-bone or soft tissue-to-bone (implantable).
+        "0274T": Decompression of neural elements in the cervical or thoracic region.
+        "0275T": Decompression of neural elements in the lumbar region.
+
+Trigger point injection:
+    CPT:
+        # https://www.cms.gov/medicare-coverage-database/view/article.aspx?articleId=56745&ver=5
+        '20552': Trigger point injection, or TPI, is a medical procedure that involves injecting an anesthetic or corticosteroid substance to relieve a trigger point, which is a painful area or knot in a muscle.
+        '20553': Trigger point injection, or TPI, is a medical procedure in which the provider injects an anesthetic or corticosteroid substance into three or more muscles to relieve painful areas or knots in muscles that form when muscles don’t relax.
+    HCPC:

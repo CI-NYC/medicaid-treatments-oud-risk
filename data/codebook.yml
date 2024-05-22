@@ -1,0 +1,386 @@
+# Exposure
+disability_pain_cal:
+   label: Personal disability and chronic pain exposure group
+  
+# Outcomes
+oud_cal:
+   label: Indicator variable for opioid use disorder during the entire study period
+   
+oud_12mo:
+   label: Indicator variable for opioid use disorder within 12 months from the start of the washout period.
+   cb: *binary
+
+oud_18mo:
+   label: Indicator variable for opioid use disorder within 18 months from the start of the washout period.
+   cb: *binary
+   
+oud_24mo:
+   label: Indicator variable for opioid use disorder within 24 months from the start of the washout period.
+   cb: *binary
+
+# Intermediate confounders
+anxiety_post_exposure_cal:
+   label: Indicator variable for whether or not an observation in the analysis cohort had an anxiety
+          disorder diagnosis during months 7-12 post-Medicaid enrollment.
+   cb: *binary
+
+depression_post_exposure_cal: 
+   label: Indicator variable for whether or not an observation in the analysis cohort had an disorder
+          disorder diagnosis during months 7-12 post-Medicaid enrollment.
+   cb: *binary
+
+# Mediators
+mediator_opioid_pain_rx_bin:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled any opioid prescription medications for pain management during the mediator period.
+   cb: *binary
+
+mediator_opioid_hydrocodone_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled an opioid prescription for hydrocodone during the mediator period.
+   cb: *binary
+   
+mediator_opioid_oxycodone_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled an opioid prescription for oxycodone during the mediator period.
+   cb: *binary
+   
+mediator_opioid_fentanyl_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled an opioid prescription for fentanyl during the mediator period.
+   cb: *binary
+   
+mediator_opioid_morphine_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled an opioid prescription for morphine during the mediator period.
+   cb: *binary
+   
+mediator_opioid_methadone_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled an opioid prescription for methadone during the mediator period.
+   cb: *binary
+   
+mediator_opioid_hydromorphone_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled an opioid prescription for hydromorphone during the mediator period.
+   cb: *binary
+   
+mediator_opioid_codeine_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled an opioid prescription for codeine during the mediator period.
+   cb: *binary
+   
+mediator_opioid_buprenorphine_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled an opioid prescription for buprenorphine during the mediator period.
+   cb: *binary
+   
+mediator_opioid_other_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled an opioid prescription for tramadol, oxymorphone, butorphanol, 
+          meperidine, nalbuphine, pentazocine, or tapentadol during the mediator period.
+   cb: *binary
+   
+mediator_count_opioid_pain_rx:
+   label: Count of the number of different opioid presciptions for pain an observation in the 
+          analysis cohort had during the mediator period.
+
+mediator_max_daily_dose_mme:
+   label: The maximum daily dose in MME units of opioids prescribed to a beneficiary within 
+          the mediator window, accounting for multiple prescriptions by adding daily 
+          doses of all fills for a particular day.
+
+mediator_months_opioid_rx:
+   label: Integer for the cumulative count of months in the mediator window during which a beneficiary 
+          filled at least one opioid prescription.
+
+mediator_avg_daily_dose_mme_month1: 
+   label: The average daily dose in MME units of opioids prescribed to a beneficiary during 
+          the first month of the mediator window.
+
+mediator_avg_daily_dose_mme_month2:
+   label: The average daily dose in MME units of opioids prescribed to a beneficiary during 
+          the second month of the mediator window.
+
+mediator_avg_daily_dose_mme_month3: 
+   label: The average daily dose in MME units of opioids prescribed to a beneficiary during 
+          the third month of the mediator window.
+
+mediator_avg_daily_dose_mme_month4:
+   label: The average daily dose in MME units of opioids prescribed to a beneficiary during 
+          the fourth month of the mediator window.
+
+mediator_avg_daily_dose_mme_month5:  
+   label: The average daily dose in MME units of opioids prescribed to a beneficiary during 
+          the fifth month of the mediator window.
+
+mediator_avg_daily_dose_mme_month6:  
+   label: The average daily dose in MME units of opioids prescribed to a beneficiary during 
+          the sixth (final) month of the mediator window.
+
+mediator_avg_daily_dose_mme_overall:
+   label: The overall average daily dose in MME units of opioids prescribed to a beneficiary 
+          over the mediator window, considering all months that a beneficiary received an 
+          opioid prescription.
+          
+mediator_prescribers_month1: 
+   label: The number of unique prescribers a beneficiary received opioid prescriptions from during 
+          the first month of the mediator window.
+          
+mediator_prescribers_month2:
+   label: The number of unique prescribers a beneficiary received opioid prescriptions from during 
+          the second month of the mediator window.
+          
+mediator_prescribers_month3:  
+   label: The number of unique prescribers a beneficiary received opioid prescriptions from during 
+          the third month of the mediator window.
+
+mediator_prescribers_month4:
+   label: The number of unique prescribers a beneficiary received opioid prescriptions from during 
+          the fourth month of the mediator window.
+
+mediator_prescribers_month5: 
+   label: The number of unique prescribers a beneficiary received opioid prescriptions from during 
+          the fifth month of the mediator window.
+
+mediator_prescribers_month6: 
+   label: The number of unique prescribers a beneficiary received opioid prescriptions from during 
+          the sixth (final) month of the mediator window.
+
+mediator_prescribers_6mo_sum:
+    label: The total number of unique prescribers a beneficiary received opioid prescriptions from during 
+           the entire mediator window.
+   
+mediator_opioid_copresc_any:
+  label: Indicator variable for whether or not an observation in the analysis cohort
+         filled ≥1 stimulant and/or benzodiazepine and/or gabapentinoid prescription(s) 
+         and ≥1 opioid prescription with the first prescription >5 days supply and 
+         >25% overlap of the days prescribed during the mediator window.
+  cb: *binary
+  
+mediator_opioid_benzo_copresc:  
+  label: Indicator variable for whether or not an observation in the analysis cohort
+         filled ≥1 benzodiazepine prescriptions and ≥1 opioid prescriptions with >25% 
+         overlap of the days prescribed, with the first prescription of opioids or benzodiazepines 
+         with >5 days supply.
+  cb: *binary
+  
+mediator_opioid_prop_benzo_copresc:  
+  label: Proportion of days in the mediator window an observation in the analysis cohort
+         filled ≥1 benzodiazepine prescriptions and ≥1 opioid prescriptions with >25% 
+         overlap of the days prescribed, with the first prescription of opioids or benzodiazepines 
+         with >5 days supply.
+  
+mediator_opioid_stimulant_copresc:
+  label: Indicator variable for whether or not an observation in the analysis cohort
+         filled ≥1 stimulant prescriptions and ≥1 opioid prescriptions with 
+         >25% overlap of the days prescribed, with the first prescription of opioids 
+         or stimulants with >5 days supply.
+  cb: *binary
+  
+mediator_opioid_prop_stimulant_copresc:  
+  label: Proportion of days in the mediator window an observation in the analysis cohort
+         filled ≥1 stimulant prescriptions and ≥1 opioid prescriptions with 
+         >25% overlap of the days prescribed, with the first prescription of opioids 
+         or stimulants with >5 days supply.
+  
+mediator_opioid_gaba_copresc:  
+  label: Indicator variable for whether or not an observation in the analysis cohort
+         filled ≥1 gabapentinoid prescriptions and ≥1 opioid prescriptions with 
+         >25% overlap of the days prescribed, with the first prescription of opioids 
+         or gabapentinoids with >5 days supply.
+  cb: *binary
+  
+mediator_opioid_prop_gaba_copresc:  
+  label: Proportion of days in the mediator window an observation in the analysis cohort
+         filled ≥1 gabapentinoid prescriptions and ≥1 opioid prescriptions with 
+         >25% overlap of the days prescribed, with the first prescription of opioids 
+         or gabapentinoids with >5 days supply.
+  
+mediator_opioid_mrelax_copresc:
+  label: Indicator variable for whether or not an observation in the analysis cohort
+         filled ≥1 muscle relaxant prescriptions and ≥1 opioid prescriptions with 
+         >25% overlap of the days prescribed, with the first prescription of opioids 
+         or muscle relaxants with >5 days supply.
+  cb: *binary
+  
+mediator_opioid_prop_mrelax_copresc:  
+  label: Proportion of days in the mediator window an observation in the analysis cohort
+         filled ≥1 muscle relaxant prescriptions and ≥1 opioid prescriptions with 
+         >25% overlap of the days prescribed, with the first prescription of opioids 
+         or muscle relaxants with >5 days supply.
+  
+mediator_count_opioid_copresc:
+   label: Count of the number of different opioid coprescriptions an observation in the 
+          analysis cohort had during the mediator period. Treatments contributing to the count are - 
+          stimulant prescription, benzodiazepine coprescription, gabapentinoid coprescription, and
+          muscle relaxant coprescription.
+
+mediator_has_tapering:
+   label: Indicator variable for for whether or not an observation in the analysis cohort 
+          experienced tapering--a minimum 15% reduction in subsequent two-month periods as 
+          compared to baseline, given that the baseline average is at least 50 MME--during
+          the mediator window.
+   cb: *binary
+
+mediator_nonopioid_pain_rx_bin:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled any nonopioid prescription medications for pain management 
+          without an overalapping opioid prescription during the mediator period.
+   cb: *binary
+   
+mediator_nonopioid_antidepressant_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled a nonopioid prescription for an antidepressant 
+          without an overalapping opioid prescription during the mediator period.
+   cb: *binary
+   
+mediator_nonopioid_muscle_relaxant_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled a nonopioid prescription for a muscle relaxant 
+           without an overalapping opioid prescription during the mediator period.
+   cb: *binary
+   
+mediator_nonopioid_antiinflammatory_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled a nonopioid prescription for an antiinflammatory/antirheumatic product
+           without an overalapping opioid prescription during the mediator period.
+   cb: *binary
+   
+mediator_nonopioid_topical_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled a nonopioid prescription for a topical product for joint and muscular pain
+           without an overalapping opioid prescription during the mediator period.
+   cb: *binary
+   
+mediator_nonopioid_gabapentin_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled a nonopioid prescription for a gabapentinoid
+          without an overalapping opioid prescription during the mediator period.
+   cb: *binary
+   
+mediator_nonopioid_other_analgesic_rx:
+   label: Indicator variable for whether or not an observation in the analysis cohort
+          filled a nonopioid prescription for another analgesic/antipyretic (excluding gabapentinoids)
+           without an overalapping opioid prescription during the mediator period.
+   cb: *binary
+
+mediator_count_nonopioid_pain_rx:
+   label: Count of the number of different nonopioid presciptions for pain an observation in the 
+   analysis cohort had during the mediator period.
+  
+mediator_has_physical_therapy:
+  label: Any claim for physical therapy during the mediator period.
+  cb: *binary
+  
+mediator_count_physical_therapy_claims:
+  label: Count of the number of unique claims for physical therapy during the mediator period.
+  
+mediator_has_chiropractic:
+   label: Indicator variable for whether or not an observation in the analysis cohort had a claim 
+          for chiropractic during the mediator period.
+   cb: *binary
+   
+mediator_has_massage_therapy:
+   label: Indicator variable for whether or not an observation in the analysis cohort had a claim 
+          for massage therapy during the mediator period.
+   cb: *binary
+
+mediator_has_ablative_techniques:
+  label: Any claim for ablative techniques during the mediator period.
+  cb: *binary
+  
+mediator_has_acupuncture:
+   label: Indicator variable for whether or not an observation in the analysis cohort had a claim 
+          for acupuncture during the mediator period.
+   cb: *binary
+
+mediator_has_blocks:
+   label: Indicator variable for whether or not an observation in the analysis cohort had a claim 
+          for nerve or joint blocks during the mediator period.
+   cb: *binary
+   
+mediator_has_botulinum_toxin:
+  label: Any claim for botulinum toxin injections during the mediator period.
+  cb: *binary
+   
+mediator_has_electrical_nerve_stimulation:
+   label: Indicator variable for whether or not an observation in the analysis cohort had a claim 
+          for electrical nerve stimulation during the mediator period.
+   cb: *binary
+   
+mediator_has_epidural_steroid:
+   label: Indicator variable for whether or not an observation in the analysis cohort had a claim 
+          for epidural steroids during the mediator period.
+   cb: *binary
+
+mediator_has_intrathecal_drug_therapy:
+   label: Indicator variable for whether or not an observation in the analysis cohort had a claim 
+          for intrathecal drug therapies during the mediator period.
+   cb: *binary
+
+mediator_has_minimally_invasive_spinal_procedure:
+   label: Indicator variable for whether or not an observation in the analysis cohort had a claim 
+          for minimally invasive spinal procedures during the mediator period.
+   cb: *binary
+
+mediator_has_trigger_point_injection:
+   label: Indicator variable for whether or not an observation in the analysis cohort had a claim 
+          for trigger point injection during the mediator period.
+   cb: *binary
+   
+mediator_has_counseling:
+   label: Indicator variable for whether or not an observation in the analysis cohort had a claim 
+          for counseling during the mediator period.
+   cb: *binary
+   
+mediator_count_counseling_claims:
+  label: Count of the number of unique claims for counseling during the mediator period.
+
+mediator_has_physical_therapy_any:
+   label: Indicator variable for whether or not an observation in the analysis cohort received claims for any of
+          the following during the mediator window - physical therapy, massage therapy, chiropractic, acupuncture, 
+          and/or electrical nerve stimulation.
+   cb: *binary
+
+mediator_has_multimodal_pain_treatment:
+   label: Indicator variable for whether or not an observation in the analysis cohort received two or more
+          of the following twelve nonopioid categories - ablative techniques, acupuncture, blocks, 
+          botulinum toxin injections, electrical nerve stimulation, epidural steroids, intrathecal drug therapies, 
+          minimally invasive spinal procedures, pharmacologic management, physical/restorative therapy, 
+          psychological treatment, and trigger point injection.
+   cb: *binary
+
+mediator_count_multimodal_pain_treatment:
+   label: Count of the number of different multimodal pain treatments an observation in the analysis cohort had during the mediator period. 
+          Treatments contributing to the value are - ablative techniques, acupuncture, blocks, 
+          botulinum toxin injections, electrical nerve stimulation, epidural steroids, intrathecal drug therapies, 
+          minimally invasive spinal procedures, pharmacologic management, physical/restorative therapy, 
+          psychological treatment, and trigger point injection.
+          
+mediator_has_multimodal_pain_treatment_restrict:
+   label: Indicator variable for whether or not an observation in the analysis cohort received any
+          of the following nonopioid treatments -  ablative techniques, acupuncture, blocks, 
+          botulinum toxin injections, electrical nerve stimulation, epidural steroids, intrathecal drug therapies, 
+          trigger point injection, massage therapy, and chiropractic.
+   cb: *binary
+
+mediator_count_multimodal_pain_treatment_restrict:
+   label: Count of the number of different multimodal pain treatments an observation in the analysis cohort had during the mediator period. 
+          Treatments contributing to the value are - 1) ablative techniques, 2) acupuncture, 3) blocks  4) botulinum toxin injections, 
+          5) electrical nerve stimulation, 6) epidural steroids, 7) intrathecal drug therapies, 8) trigger point injection, 9) massage therapy 
+          10) chiropractic.
+          
+mediator_opioid_days_covered:
+   label: Proportion of days in the 6 month mediator period that the beneficiary has an opioid prescription.
+
+# Censoring
+uncens_18mo:
+   label: Indicator variable for whether or not an observation in the analysis cohort 
+          is considered as uncensored within 18 months from the start of the washout period.
+   cb: *binary
+
+uncens_24mo:
+   label: Indicator variable for whether or not an observation in the analysis cohort 
+          is considered as uncensored within 24 months from the start of the washout period.
+   cb: *binary
